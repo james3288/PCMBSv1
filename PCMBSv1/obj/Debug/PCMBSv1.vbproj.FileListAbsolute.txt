@@ -1,0 +1,26 @@
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.exe.config
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.exe
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.pdb
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.xml
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMain.resources
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.Resources.resources
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbproj.GenerateResource.Cache
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.exe
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.xml
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.pdb
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRequisitionSlip.resources
+c:\users\kj\documents\visual studio 2015\Projects\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbprojResolveAssemblyReference.cache
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.exe.config
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.exe
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.xml
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.pdb
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.exe
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.pdb
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.xml
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMain.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRequisitionSlip.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.Resources.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbproj.GenerateResource.Cache
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FQuantityTakeOff.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMessageForm.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbprojResolveAssemblyReference.cache
