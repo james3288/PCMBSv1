@@ -39,7 +39,6 @@ Partial Class FRequisitionSlip
         Me.picStatus = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         Me.panel_right.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,7 +88,7 @@ Partial Class FRequisitionSlip
         Me.DataGridView1.Cursor = System.Windows.Forms.Cursors.SizeAll
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.GridColor = System.Drawing.Color.SlateGray
+        Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -99,7 +98,7 @@ Partial Class FRequisitionSlip
         'panel_left
         '
         Me.panel_left.BackColor = System.Drawing.Color.Transparent
-        Me.panel_left.Controls.Add(Me.TextBox3)
+        Me.panel_left.BackgroundImage = CType(resources.GetObject("panel_left.BackgroundImage"), System.Drawing.Image)
         Me.panel_left.Controls.Add(Me.Button1)
         Me.panel_left.Controls.Add(Me.DateTimePicker1)
         Me.panel_left.Controls.Add(Me.ComboBox1)
@@ -113,7 +112,7 @@ Partial Class FRequisitionSlip
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.DarkOliveGreen
+        Me.Button1.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -137,6 +136,7 @@ Partial Class FRequisitionSlip
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Hello World 1", "Hello World 2", "Hello World 3"})
         Me.ComboBox1.Location = New System.Drawing.Point(54, 115)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(191, 21)
@@ -225,13 +225,6 @@ Partial Class FRequisitionSlip
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(54, 283)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(191, 20)
-        Me.TextBox3.TabIndex = 5
-        '
         'FRequisitionSlip
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -275,5 +268,4 @@ Partial Class FRequisitionSlip
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents picStatus As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox3 As TextBox
 End Class

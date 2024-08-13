@@ -23,3 +23,4 @@ G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.Resources.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbproj.GenerateResource.Cache
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FQuantityTakeOff.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMessageForm.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbprojResolveAssemblyReference.cache

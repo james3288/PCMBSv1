@@ -65,10 +65,10 @@
 
 
         'UI FOR TEXTBOX/COMBOBOX/DATETIMEPICKER
-        UIRsNo.king_placeholder_textbox("RS No...", TextBox1, Nothing, panel_left, My.Resources.received1, False, "White", "")
-        UIDescription.king_placeholder_textbox("Description...", TextBox2, l1, panel_left, My.Resources.received1, False, "White", "")
-        UIcombobox.king_placeholder_combobox("combobox here...", ComboBox1, Nothing, panel_left, My.Resources.received1, "White", "")
-        UIDate.king_placeholder_datepicker("date picker...", DateTimePicker1, panel_left, My.Resources.received1, "White")
+        UIRsNo.king_placeholder_textbox("RS No...", TextBox1, Nothing, panel_left, My.Resources.received1, False, "Custom1", "")
+        UIDescription.king_placeholder_textbox("Description...", TextBox2, l1, panel_left, My.Resources.received1, False, "Custom1", "")
+        UIcombobox.king_placeholder_combobox("combobox here...", ComboBox1, Nothing, panel_left, My.Resources.received1, "Custom1", "")
+        UIDate.king_placeholder_datepicker("date picker...", DateTimePicker1, panel_left, My.Resources.received1, "Custom1")
 
 
         'DUMMY DATA RANI
@@ -96,9 +96,9 @@
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         DataGridView1.MultiSelect = False
         DataGridView1.RowHeadersVisible = False
+        DataGridView1.BackgroundColor = ColorTranslator.FromHtml("#1B2838")
 
-        ' Alternating row style
-        DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray
+
 
         ' Column settings
         DataGridView1.Columns(0).HeaderText = "RS ID"
@@ -108,8 +108,15 @@
         DataGridView1.Columns(2).HeaderText = "RS Date"
         DataGridView1.Columns(2).DefaultCellStyle.Format = "yyyy-MM-dd" ' Format date column
         DataGridView1.Columns(3).HeaderText = "Description"
+        DataGridView1.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#6B7D8E")
 
 
+        'Alternating row style
+        DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#213C56")
+        DataGridView1.AlternatingRowsDefaultCellStyle.ForeColor = ColorTranslator.FromHtml("#F7F7F7")
+
+
+        Button1.BackColor = ColorTranslator.FromHtml("#1C2837")
     End Sub
 
     Private Sub FRequisitionSlip_Shown(sender As Object, e As EventArgs) Handles Me.Shown

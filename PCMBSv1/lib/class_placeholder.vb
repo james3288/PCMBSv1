@@ -35,7 +35,7 @@
         If tt.Text = "" Then
             tt.ForeColor = Color.Gray
         Else
-            tt.ForeColor = Color.Black
+            tt.ForeColor = set_theme_color(1)
         End If
     End Sub
 
@@ -45,7 +45,7 @@
         If cmb.Text = "" Then
             cmb.ForeColor = Color.Gray
         Else
-            cmb.ForeColor = Color.Black
+            cmb.ForeColor = set_theme_color(1)
         End If
     End Sub
 
@@ -139,7 +139,7 @@
 
         'THEME COLOR
         t.BackColor = set_theme_color(0)
-        t.ForeColor = set_theme_color(1)
+        t.ForeColor = Color.White 'set_theme_color(1)
 
 
         'AUTOCOMPLETE
@@ -344,17 +344,24 @@
                     set_theme_color = Color.Yellow
                 Case "Purple"
                     set_theme_color = Color.Purple
+                Case "Custom1"
+                    set_theme_color = ColorTranslator.FromHtml("#1C2837")
             End Select
+        End If
 
-        ElseIf n = 1 Then
+        If n = 1 Then
             'for forecolor
             Select Case cThemeColor
                 Case "White", "Orange", "Yellow"
                     set_theme_color = Color.Gray
                 Case "Black", "Green", "Gray", "Purple"
                     set_theme_color = Color.White
+                Case "Custom1"
+                    set_theme_color = ColorTranslator.FromHtml("#E9E7E9")
             End Select
-        ElseIf n = 3 Then
+        End If
+
+        If n = 3 Then
             'for placeholder color 
             Select Case cThemeColor
                 Case "Gray", "Black"
@@ -369,6 +376,8 @@
                     set_theme_color = Color.Red
                 Case "Purple"
                     set_theme_color = Color.LightBlue
+                Case "Custom1"
+                    set_theme_color = ColorTranslator.FromHtml("#E9E7E9")
             End Select
         End If
 
@@ -488,4 +497,6 @@
             Return True
         End If
     End Function
+
+
 End Class

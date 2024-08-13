@@ -34,6 +34,7 @@ Partial Class FMain
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.leftPanel = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
@@ -167,12 +168,22 @@ Partial Class FMain
         'leftPanel
         '
         Me.leftPanel.BackgroundImage = CType(resources.GetObject("leftPanel.BackgroundImage"), System.Drawing.Image)
+        Me.leftPanel.Controls.Add(Me.Panel4)
         Me.leftPanel.Controls.Add(Me.ToolStrip1)
         Me.leftPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.leftPanel.Location = New System.Drawing.Point(0, 76)
         Me.leftPanel.Name = "leftPanel"
         Me.leftPanel.Size = New System.Drawing.Size(260, 475)
         Me.leftPanel.TabIndex = 3
+        '
+        'Panel4
+        '
+        Me.Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), System.Drawing.Image)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel4.Location = New System.Drawing.Point(0, 433)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(260, 42)
+        Me.Panel4.TabIndex = 1
         '
         'ToolStrip1
         '
@@ -240,6 +251,7 @@ Partial Class FMain
         'pMain
         '
         Me.pMain.BackColor = System.Drawing.Color.Transparent
+        Me.pMain.BackgroundImage = CType(resources.GetObject("pMain.BackgroundImage"), System.Drawing.Image)
         Me.pMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pMain.Location = New System.Drawing.Point(260, 76)
         Me.pMain.Name = "pMain"
@@ -292,4 +304,5 @@ Partial Class FMain
     Friend WithEvents ToolStripButton4 As ToolStripButton
     Friend WithEvents pMain As Panel
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents Panel4 As Panel
 End Class

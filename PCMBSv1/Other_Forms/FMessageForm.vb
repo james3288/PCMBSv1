@@ -61,29 +61,43 @@
         If status = "warning" Then
             picStatus.Image = My.Resources.warning
             lblMessage.ForeColor = Color.Orange
+            lblTitle.ForeColor = Color.Orange
+
             btnOk.BackColor = Color.Orange
+            btnOk.Text = "OK"
+            btnCancel.Text = "Cancel"
 
         ElseIf status = "error" Then
             picStatus.Image = My.Resources._error
             lblMessage.ForeColor = Color.Red
-            btnOk.BackColor = Color.Red
+            lblTitle.ForeColor = Color.Red
+            btnOk.BackColor = ColorTranslator.FromHtml("#641217")
+            btnOk.Text = "OK"
+            btnCancel.Text = "Cancel"
+
         ElseIf status = "info" Then
 
             picStatus.Image = My.Resources.info
             lblMessage.ForeColor = Color.LightBlue
+            lblTitle.ForeColor = Color.LightBlue
             btnOk.BackColor = Color.LightBlue
+            btnOk.Text = "OK"
+            btnCancel.Text = "Cancel"
 
         ElseIf status = "question" Then
 
             picStatus.Image = My.Resources.question
             lblMessage.ForeColor = Color.Yellow
-
+            lblTitle.ForeColor = Color.Yellow
             btnOk.BackColor = Color.Yellow
             btnOk.ForeColor = Color.Black
+            btnOk.Text = "Yes"
+            btnCancel.Text = "No"
         End If
 
         lblMessage.Text = message
         lblTitle.Text = title
+
         lblStatus.Text = status.ToUpper()
     End Sub
 

@@ -9,15 +9,9 @@
         Dim exist As Boolean = pcmbs.check_form_if_exist_in_flowLayoutPanel(FRequisitionSlip)
 
         If exist = True Then
-            'MsgBox($"{FRequisitionSlip.Name } has already open!")
-            Dim newMessage As New FMessageForm
 
-            With newMessage
-                .title = "Administrator Message"
-                .status = "question"
-                .message = $"{FRequisitionSlip.Text  } has already open!"
-                .ShowDialog()
-            End With
+            Dim message As String = $"{FRequisitionSlip.Text  } has already open!"
+            pcmbs.messageForm("Administrator Message", "question", message)
 
             Exit Sub
         End If
@@ -66,4 +60,5 @@
     Public Function paramFunction()
         Return 2
     End Function
+
 End Class

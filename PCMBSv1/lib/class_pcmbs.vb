@@ -97,4 +97,22 @@
     End Sub
 
 #End Region
+
+#Region "DELEGATES"
+    Public Delegate Function myFunctionDelegate()
+
+#End Region
+
+#Region "Message Form"
+    Public Sub messageForm(Optional title As String = "", Optional status As String = "", Optional message As String = "", Optional fn As myFunctionDelegate = Nothing)
+        Dim newMessage As New FMessageForm
+
+        With newMessage
+            .title = title
+            .status = status
+            .message = message
+            .ShowDialog()
+        End With
+    End Sub
+#End Region
 End Class
