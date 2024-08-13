@@ -114,6 +114,13 @@
     <Compile Include="Other_Forms\FMessageForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Other_Forms\FRS_Search.Designer.vb">
+      <DependentUpon>FRS_Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Other_Forms\FRS_Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\Public_Module.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -133,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Other_Forms\FMessageForm.resx">
       <DependentUpon>FMessageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other_Forms\FRS_Search.resx">
+      <DependentUpon>FRS_Search.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -248,6 +258,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

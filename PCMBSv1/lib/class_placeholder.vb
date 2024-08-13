@@ -440,6 +440,8 @@
 
         End If
     End Sub
+
+
     Public Function blank_textbox() As Boolean
         If t.Text.ToUpper = cPlaceholder.ToUpper Or t.Text = "" Then
             blank_textbox = True
@@ -451,6 +453,7 @@
                 .status = "error"
                 .ShowDialog()
             End With
+
 
             'MessageBox.Show("textbox '" & cPlaceholder & "' must not be blank...", "SUPPLY INFO:", MessageBoxButtons.OK, MessageBoxIcon.Stop)
             t.Focus()

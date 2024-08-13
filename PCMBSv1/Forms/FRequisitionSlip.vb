@@ -1,12 +1,14 @@
 ﻿Public Class FRequisitionSlip
 
     Private UIRsNo, UIDescription, UIcombobox, UIDate, UIMak As New class_placeholder
+    Private pcmbs As New class_pcmbs
 
     Public Class RSField
         Public Property rs_id As String
         Public Property rs_no As String
-        Public Property rs_date As DateTime
         Public Property description As String
+        Public Property rs_date As DateTime
+
     End Class
 
     Private Class ComboboxField
@@ -25,6 +27,15 @@
         ControlPaint.DrawBorder(e.Graphics, panel_left.ClientRectangle, Color.Black, ButtonBorderStyle.Solid)
     End Sub
 
+    Private Sub SearchByRSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SearchByRSToolStripMenuItem.Click
+        FRS_Search.ShowDialog()
+    End Sub
+
+
+    Private Sub Save()
+        MsgBox("Successfully Saved")
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'filter empty textbox 
 
@@ -35,9 +46,9 @@
         End If
 
 
-        'get the data from textbox or combobox 
-        MsgBox(UIRsNo.tbox.Text)
-        MsgBox(UIcombobox.cBox.Text)
+        pcmbs.messageForm("Administrator", "question", "Are you sure you want to save this data?")
+
+
     End Sub
 
     Private Sub panel_right_Paint(sender As Object, e As PaintEventArgs) Handles panel_right.Paint
@@ -73,19 +84,19 @@
 
         'DUMMY DATA RANI
         Dim userProfiles As New List(Of RSField)() From {
-            New RSField With {.rs_id = "001", .rs_no = "RS123", .rs_date = Date.Now, .description = "Description for RS123"},
-            New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
-            New RSField With {.rs_id = "003", .rs_no = "RS125", .rs_date = Date.Now, .description = "Description for RS125"},
-            New RSField With {.rs_id = "004", .rs_no = "RS126", .rs_date = Date.Now, .description = "Description for RS126"},
-            New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
-            New RSField With {.rs_id = "003", .rs_no = "RS125", .rs_date = Date.Now, .description = "Description for RS125"},
-            New RSField With {.rs_id = "004", .rs_no = "RS126", .rs_date = Date.Now, .description = "Description for RS126"},
-            New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
-            New RSField With {.rs_id = "003", .rs_no = "RS125", .rs_date = Date.Now, .description = "Description for RS125"},
-            New RSField With {.rs_id = "004", .rs_no = "RS126", .rs_date = Date.Now, .description = "Description for RS126"},
-            New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
-            New RSField With {.rs_id = "003", .rs_no = "RS125", .rs_date = Date.Now, .description = "Description for RS125"},
-            New RSField With {.rs_id = "004", .rs_no = "RS126", .rs_date = Date.Now, .description = "Description for RS126"}
+            New RSField With {.rs_id = "001", .rs_no = "RS123", .description = "Description for RS123", .rs_date = Date.Now},
+            New RSField With {.rs_id = "002", .rs_no = "RS124", .description = "Description for RS124", .rs_date = Date.Now},
+            New RSField With {.rs_id = "003", .rs_no = "RS125", .description = "Description for RS125", .rs_date = Date.Now},
+            New RSField With {.rs_id = "004", .rs_no = "RS126", .description = "Description for RS126", .rs_date = Date.Now},
+            New RSField With {.rs_id = "002", .rs_no = "RS124", .description = "Description for RS124", .rs_date = Date.Now},
+            New RSField With {.rs_id = "003", .rs_no = "RS125", .description = "Description for RS125", .rs_date = Date.Now},
+            New RSField With {.rs_id = "004", .rs_no = "RS126", .description = "Description for RS126", .rs_date = Date.Now},
+            New RSField With {.rs_id = "002", .rs_no = "RS124", .description = "Description for RS124", .rs_date = Date.Now},
+            New RSField With {.rs_id = "003", .rs_no = "RS125", .description = "Description for RS125", .rs_date = Date.Now},
+            New RSField With {.rs_id = "004", .rs_no = "RS126", .description = "Description for RS126", .rs_date = Date.Now},
+            New RSField With {.rs_id = "002", .rs_no = "RS124", .description = "Description for RS124", .rs_date = Date.Now},
+            New RSField With {.rs_id = "003", .rs_no = "RS125", .description = "Description for RS125", .rs_date = Date.Now},
+            New RSField With {.rs_id = "004", .rs_no = "RS126", .description = "Description for RS126", .rs_date = Date.Now}
        }
 
         ' Bind the list to the DataGridView
@@ -99,27 +110,26 @@
         DataGridView1.BackgroundColor = ColorTranslator.FromHtml("#1B2838")
 
 
-
         ' Column settings
         DataGridView1.Columns(0).HeaderText = "RS ID"
         DataGridView1.Columns(0).Width = 50
 
         DataGridView1.Columns(1).HeaderText = "RS No"
-        DataGridView1.Columns(2).HeaderText = "RS Date"
-        DataGridView1.Columns(2).DefaultCellStyle.Format = "yyyy-MM-dd" ' Format date column
-        DataGridView1.Columns(3).HeaderText = "Description"
-        DataGridView1.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#6B7D8E")
+        DataGridView1.Columns(2).HeaderText = "Description"
 
+        DataGridView1.Columns(3).DefaultCellStyle.Format = "yyyy-MM-dd" ' Format date column
+        DataGridView1.Columns(3).HeaderText = "RS Date"
+
+        DataGridView1.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#8d9da0")
+        DataGridView1.DefaultCellStyle.ForeColor = Color.Black
 
         'Alternating row style
-        DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#213C56")
-        DataGridView1.AlternatingRowsDefaultCellStyle.ForeColor = ColorTranslator.FromHtml("#F7F7F7")
+        DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#B6C3C7")
+        DataGridView1.AlternatingRowsDefaultCellStyle.ForeColor = Color.Black
 
 
         Button1.BackColor = ColorTranslator.FromHtml("#1C2837")
     End Sub
 
-    Private Sub FRequisitionSlip_Shown(sender As Object, e As EventArgs) Handles Me.Shown
 
-    End Sub
 End Class
