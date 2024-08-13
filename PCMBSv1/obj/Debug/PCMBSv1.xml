@@ -87,6 +87,11 @@ PCMBSv1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PCMBSv1.My.Resources.Resources.question">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PCMBSv1.My.Resources.Resources.received1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

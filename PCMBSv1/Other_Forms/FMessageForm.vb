@@ -61,12 +61,25 @@
         If status = "warning" Then
             picStatus.Image = My.Resources.warning
             lblMessage.ForeColor = Color.Orange
+            btnOk.BackColor = Color.Orange
+
         ElseIf status = "error" Then
             picStatus.Image = My.Resources._error
             lblMessage.ForeColor = Color.Red
+            btnOk.BackColor = Color.Red
         ElseIf status = "info" Then
+
             picStatus.Image = My.Resources.info
             lblMessage.ForeColor = Color.LightBlue
+            btnOk.BackColor = Color.LightBlue
+
+        ElseIf status = "question" Then
+
+            picStatus.Image = My.Resources.question
+            lblMessage.ForeColor = Color.Yellow
+
+            btnOk.BackColor = Color.Yellow
+            btnOk.ForeColor = Color.Black
         End If
 
         lblMessage.Text = message
@@ -105,6 +118,10 @@
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Dispose()
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
 End Class

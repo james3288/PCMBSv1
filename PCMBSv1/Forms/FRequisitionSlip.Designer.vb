@@ -23,7 +23,7 @@ Partial Class FRequisitionSlip
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRequisitionSlip))
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.panel_right = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -34,11 +34,12 @@ Partial Class FRequisitionSlip
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.picStatus = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         Me.panel_right.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,15 +76,15 @@ Partial Class FRequisitionSlip
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.DimGray
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Cursor = System.Windows.Forms.Cursors.SizeAll
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -98,6 +99,7 @@ Partial Class FRequisitionSlip
         'panel_left
         '
         Me.panel_left.BackColor = System.Drawing.Color.Transparent
+        Me.panel_left.Controls.Add(Me.TextBox3)
         Me.panel_left.Controls.Add(Me.Button1)
         Me.panel_left.Controls.Add(Me.DateTimePicker1)
         Me.panel_left.Controls.Add(Me.ComboBox1)
@@ -164,6 +166,18 @@ Partial Class FRequisitionSlip
         Me.Panel2.Size = New System.Drawing.Size(1208, 44)
         Me.Panel2.TabIndex = 1
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(18, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(174, 15)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Press (CTRL + S) to save/update"
+        '
         'Panel1
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
@@ -211,17 +225,12 @@ Partial Class FRequisitionSlip
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'Label1
+        'TextBox3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(18, 13)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(174, 15)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Press (CTRL + S) to save/update"
+        Me.TextBox3.Location = New System.Drawing.Point(54, 283)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(191, 20)
+        Me.TextBox3.TabIndex = 5
         '
         'FRequisitionSlip
         '
@@ -266,4 +275,5 @@ Partial Class FRequisitionSlip
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents picStatus As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox3 As TextBox
 End Class

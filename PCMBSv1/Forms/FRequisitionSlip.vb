@@ -1,6 +1,6 @@
 ﻿Public Class FRequisitionSlip
 
-    Private UIRsNo, UIDescription, UIcombobox, UIDate As New class_placeholder
+    Private UIRsNo, UIDescription, UIcombobox, UIDate, UIMak As New class_placeholder
 
     Public Class RSField
         Public Property rs_id As String
@@ -71,7 +71,7 @@
         UIDate.king_placeholder_datepicker("date picker...", DateTimePicker1, panel_left, My.Resources.received1, "White")
 
 
-        'DUMMY DATA HERE
+        'DUMMY DATA RANI
         Dim userProfiles As New List(Of RSField)() From {
             New RSField With {.rs_id = "001", .rs_no = "RS123", .rs_date = Date.Now, .description = "Description for RS123"},
             New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
@@ -80,17 +80,16 @@
             New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
             New RSField With {.rs_id = "003", .rs_no = "RS125", .rs_date = Date.Now, .description = "Description for RS125"},
             New RSField With {.rs_id = "004", .rs_no = "RS126", .rs_date = Date.Now, .description = "Description for RS126"},
-                New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
+            New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
             New RSField With {.rs_id = "003", .rs_no = "RS125", .rs_date = Date.Now, .description = "Description for RS125"},
             New RSField With {.rs_id = "004", .rs_no = "RS126", .rs_date = Date.Now, .description = "Description for RS126"},
-                New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
+            New RSField With {.rs_id = "002", .rs_no = "RS124", .rs_date = Date.Now, .description = "Description for RS124"},
             New RSField With {.rs_id = "003", .rs_no = "RS125", .rs_date = Date.Now, .description = "Description for RS125"},
             New RSField With {.rs_id = "004", .rs_no = "RS126", .rs_date = Date.Now, .description = "Description for RS126"}
        }
 
         ' Bind the list to the DataGridView
         DataGridView1.DataSource = userProfiles
-
 
         ' Set some properties of the DataGridView
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
@@ -104,6 +103,7 @@
         ' Column settings
         DataGridView1.Columns(0).HeaderText = "RS ID"
         DataGridView1.Columns(0).Width = 50
+
         DataGridView1.Columns(1).HeaderText = "RS No"
         DataGridView1.Columns(2).HeaderText = "RS Date"
         DataGridView1.Columns(2).DefaultCellStyle.Format = "yyyy-MM-dd" ' Format date column

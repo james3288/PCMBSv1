@@ -45,13 +45,13 @@ Partial Class FMessageForm
         'Panel3
         '
         Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
-        Me.Panel3.Controls.Add(Me.btnCancel)
-        Me.Panel3.Controls.Add(Me.btnOk)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Controls.Add(Me.lblMessage)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 42)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(352, 187)
+        Me.Panel3.Size = New System.Drawing.Size(352, 217)
         Me.Panel3.TabIndex = 2
         '
         'lblMessage
@@ -59,23 +59,24 @@ Partial Class FMessageForm
         Me.lblMessage.BackColor = System.Drawing.Color.Transparent
         Me.lblMessage.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMessage.ForeColor = System.Drawing.Color.White
-        Me.lblMessage.Location = New System.Drawing.Point(21, 32)
+        Me.lblMessage.Location = New System.Drawing.Point(11, 34)
         Me.lblMessage.Name = "lblMessage"
-        Me.lblMessage.Size = New System.Drawing.Size(309, 112)
+        Me.lblMessage.Size = New System.Drawing.Size(329, 112)
         Me.lblMessage.TabIndex = 7
         Me.lblMessage.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem " &
     "Ipsum has been the industry's standard dummy text ever since the 1500s, when an " &
     "unknown printer took a galley"
+        Me.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel2
         '
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Controls.Add(Me.btnOk)
+        Me.Panel2.Controls.Add(Me.btnCancel)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 229)
+        Me.Panel2.Location = New System.Drawing.Point(0, 259)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(352, 29)
+        Me.Panel2.Size = New System.Drawing.Size(352, 44)
         Me.Panel2.TabIndex = 1
         '
         'Label1
@@ -83,12 +84,12 @@ Partial Class FMessageForm
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(190, 6)
+        Me.Label1.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label1.Location = New System.Drawing.Point(76, 193)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 15)
+        Me.Label1.Size = New System.Drawing.Size(159, 15)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Press (Esc/Space) to Cancel"
+        Me.Label1.Text = "Press (Esc/Space) to Cancel /"
         '
         'panelHeader
         '
@@ -157,7 +158,7 @@ Partial Class FMessageForm
         Me.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOk.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOk.ForeColor = System.Drawing.Color.White
-        Me.btnOk.Location = New System.Drawing.Point(161, 153)
+        Me.btnOk.Location = New System.Drawing.Point(157, 10)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(90, 24)
         Me.btnOk.TabIndex = 8
@@ -166,12 +167,12 @@ Partial Class FMessageForm
         '
         'btnCancel
         '
-        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCancel.BackColor = System.Drawing.Color.DarkGray
         Me.btnCancel.FlatAppearance.BorderSize = 0
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.White
-        Me.btnCancel.Location = New System.Drawing.Point(258, 153)
+        Me.btnCancel.Location = New System.Drawing.Point(254, 10)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(90, 24)
         Me.btnCancel.TabIndex = 9
@@ -183,8 +184,8 @@ Partial Class FMessageForm
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(9, 6)
+        Me.Label2.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label2.Location = New System.Drawing.Point(233, 193)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(109, 15)
         Me.Label2.TabIndex = 8
@@ -194,7 +195,7 @@ Partial Class FMessageForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(352, 258)
+        Me.ClientSize = New System.Drawing.Size(352, 303)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.panelHeader)
@@ -204,8 +205,8 @@ Partial Class FMessageForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FMessageForm"
         Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.panelHeader.ResumeLayout(False)
         Me.panelHeader.PerformLayout()
         CType(Me.picStatus, System.ComponentModel.ISupportInitialize).EndInit()
