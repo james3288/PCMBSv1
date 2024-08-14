@@ -33,9 +33,16 @@ Partial Class FQuantityTakeOff
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         Me.panel_right.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panel_left.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.picStatus, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,10 +54,9 @@ Partial Class FQuantityTakeOff
         Me.Panel3.Controls.Add(Me.panel_right)
         Me.Panel3.Controls.Add(Me.panel_left)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 57)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Location = New System.Drawing.Point(0, 46)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1595, 600)
+        Me.Panel3.Size = New System.Drawing.Size(1196, 488)
         Me.Panel3.TabIndex = 5
         '
         'panel_right
@@ -58,10 +64,9 @@ Partial Class FQuantityTakeOff
         Me.panel_right.BackColor = System.Drawing.Color.Transparent
         Me.panel_right.Controls.Add(Me.DataGridView1)
         Me.panel_right.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_right.Location = New System.Drawing.Point(361, 0)
-        Me.panel_right.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.panel_right.Location = New System.Drawing.Point(271, 0)
         Me.panel_right.Name = "panel_right"
-        Me.panel_right.Size = New System.Drawing.Size(1234, 600)
+        Me.panel_right.Size = New System.Drawing.Size(925, 488)
         Me.panel_right.TabIndex = 1
         '
         'DataGridView1
@@ -84,20 +89,24 @@ Partial Class FQuantityTakeOff
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.GridColor = System.Drawing.Color.SlateGray
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(1234, 600)
+        Me.DataGridView1.Size = New System.Drawing.Size(925, 488)
         Me.DataGridView1.TabIndex = 0
         '
         'panel_left
         '
         Me.panel_left.BackColor = System.Drawing.Color.Transparent
+        Me.panel_left.Controls.Add(Me.Label2)
+        Me.panel_left.Controls.Add(Me.Button1)
+        Me.panel_left.Controls.Add(Me.DateTimePicker1)
+        Me.panel_left.Controls.Add(Me.ComboBox1)
+        Me.panel_left.Controls.Add(Me.TextBox2)
+        Me.panel_left.Controls.Add(Me.TextBox1)
         Me.panel_left.Dock = System.Windows.Forms.DockStyle.Left
         Me.panel_left.Location = New System.Drawing.Point(0, 0)
-        Me.panel_left.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.panel_left.Name = "panel_left"
-        Me.panel_left.Size = New System.Drawing.Size(361, 600)
+        Me.panel_left.Size = New System.Drawing.Size(271, 488)
         Me.panel_left.TabIndex = 0
         '
         'Panel1
@@ -108,19 +117,17 @@ Partial Class FQuantityTakeOff
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1595, 57)
+        Me.Panel1.Size = New System.Drawing.Size(1196, 46)
         Me.Panel1.TabIndex = 3
         '
         'picStatus
         '
         Me.picStatus.BackColor = System.Drawing.Color.Transparent
         Me.picStatus.Image = Global.PCMBSv1.My.Resources.Resources.statistics
-        Me.picStatus.Location = New System.Drawing.Point(16, 11)
-        Me.picStatus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.picStatus.Location = New System.Drawing.Point(12, 9)
         Me.picStatus.Name = "picStatus"
-        Me.picStatus.Size = New System.Drawing.Size(52, 46)
+        Me.picStatus.Size = New System.Drawing.Size(39, 37)
         Me.picStatus.TabIndex = 8
         Me.picStatus.TabStop = False
         '
@@ -131,10 +138,9 @@ Partial Class FQuantityTakeOff
         Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(76, 13)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LinkLabel1.Location = New System.Drawing.Point(57, 11)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(209, 28)
+        Me.LinkLabel1.Size = New System.Drawing.Size(165, 21)
         Me.LinkLabel1.TabIndex = 7
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "QUANTITY TAKE OFF"
@@ -144,10 +150,9 @@ Partial Class FQuantityTakeOff
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1544, 12)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(1158, 10)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(35, 32)
+        Me.PictureBox1.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
@@ -155,22 +160,78 @@ Partial Class FQuantityTakeOff
         '
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 657)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Location = New System.Drawing.Point(0, 534)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1595, 54)
+        Me.Panel2.Size = New System.Drawing.Size(1196, 44)
         Me.Panel2.TabIndex = 4
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(12, 146)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(59, 19)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Rs Date:"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Image = Global.PCMBSv1.My.Resources.Resources.checked
+        Me.Button1.Location = New System.Drawing.Point(15, 217)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(233, 43)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "         Save"
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(54, 168)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(191, 20)
+        Me.DateTimePicker1.TabIndex = 9
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Hello World 1", "Hello World 2", "Hello World 3"})
+        Me.ComboBox1.Location = New System.Drawing.Point(54, 115)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(191, 21)
+        Me.ComboBox1.TabIndex = 6
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(54, 70)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(191, 20)
+        Me.TextBox2.TabIndex = 8
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(54, 28)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(191, 20)
+        Me.TextBox1.TabIndex = 7
         '
         'FQuantityTakeOff
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1595, 711)
+        Me.ClientSize = New System.Drawing.Size(1196, 578)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FQuantityTakeOff"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Quantity Take Off"
@@ -178,6 +239,8 @@ Partial Class FQuantityTakeOff
         Me.Panel3.ResumeLayout(False)
         Me.panel_right.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panel_left.ResumeLayout(False)
+        Me.panel_left.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.picStatus, System.ComponentModel.ISupportInitialize).EndInit()
@@ -195,4 +258,10 @@ Partial Class FQuantityTakeOff
     Friend WithEvents Panel2 As Panel
     Friend WithEvents picStatus As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
 End Class

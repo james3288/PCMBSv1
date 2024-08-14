@@ -31,6 +31,9 @@
         FRS_Search.ShowDialog()
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
 
     Private Sub Save()
         MsgBox("Successfully Saved")

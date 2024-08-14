@@ -22,7 +22,17 @@ PCMBSv1
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:PCMBSv1.My.Resources.Resources._8686102">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PCMBSv1.My.Resources.Resources._error">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCMBSv1.My.Resources.Resources.bg_line">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
