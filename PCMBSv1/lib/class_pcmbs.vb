@@ -80,7 +80,7 @@
 
     Public Sub refresh_links(link As String)
 
-        Dim c As Control
+        Dim c As New Control
         For Each ctr As Control In cFlowLayoutPanel.Controls
             If ctr.Text.ToLower() = link Then
                 c = ctr

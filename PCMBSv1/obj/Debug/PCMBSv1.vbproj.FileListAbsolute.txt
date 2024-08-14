@@ -24,3 +24,17 @@ G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbproj.GenerateResour
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FQuantityTakeOff.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMessageForm.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbprojResolveAssemblyReference.cache
+D:\kj\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.exe.config
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.exe
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.xml
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.pdb
+D:\kj\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.exe
+D:\kj\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.pdb
+D:\kj\PCMBSv1\PCMBSv1\bin\Debug\PCMBSv1.xml
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMain.resources
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FQuantityTakeOff.resources
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRequisitionSlip.resources
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.Resources.resources
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMessageForm.resources
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbproj.GenerateResource.Cache
+D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRS_Search.resources

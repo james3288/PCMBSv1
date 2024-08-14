@@ -1,5 +1,5 @@
 ﻿Public Class FMessageForm
-#Region "MOVABLE FORMS"
+#Region "MOVABLE VARIABLES"
     Dim IsFormBeingDragged As Boolean
     Dim drag As Boolean
     Dim MouseDownX As Integer
@@ -12,6 +12,8 @@
     Public title As String
     Public cFn As myFunctionDelegate
 #End Region
+
+#Region "DROP SHADOW EFFECT"
     ' this is code is for dropshadow on form
     Protected Overrides ReadOnly Property CreateParams() As System.Windows.Forms.CreateParams
         Get
@@ -22,15 +24,9 @@
         End Get
 
     End Property
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Me.Dispose()
+#End Region
 
-    End Sub
-
-    Private Sub panelHeader_Paint(sender As Object, e As PaintEventArgs) Handles panelHeader.Paint
-
-    End Sub
-
+#Region "MOVABLE FORM FUNCTIONS"
     Private Sub panelHeader_MouseDown(sender As Object, e As MouseEventArgs) Handles panelHeader.MouseDown
         If e.Button = MouseButtons.Left Then
             IsFormBeingDragged = True
@@ -55,6 +51,12 @@
         If e.Button = MouseButtons.Left Then
             IsFormBeingDragged = False
         End If
+    End Sub
+#End Region
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Me.Dispose()
+
     End Sub
 
     Private Sub FMessageForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -135,7 +137,4 @@
 
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
-    End Sub
 End Class
