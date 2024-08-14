@@ -2,6 +2,9 @@
 
     Private cListOfLinkLabel As New List(Of LinkLabel)
     Private cFlowLayoutPanel As FlowLayoutPanel
+    Private cCustomButton As Panel
+    Private cCustomFunction As customFunctionDelegate
+
 
     Public Sub _addToPanel(Optional form As Form = Nothing, Optional panel As Panel = Nothing, Optional link As LinkLabel = Nothing)
         With form
@@ -93,6 +96,7 @@
 
 #Region "HANDLER"
     Private Sub link_clicked(sender As Object, e As EventArgs, Optional form As Form = Nothing)
+        form.Visible = True
         form.BringToFront()
     End Sub
 
@@ -114,5 +118,39 @@
             .ShowDialog()
         End With
     End Sub
+#End Region
+
+#Region "Custom Button"
+
+    Public Delegate Function customFunctionDelegate()
+
+
+    Public Sub CustomButton(Optional panel As Panel = Nothing, Optional fn As customFunctionDelegate = Nothing)
+        cCustomButton = panel
+        cCustomFunction = fn
+
+        AddHandler cCustomButton.MouseEnter, AddressOf customButtonMouseEnter
+        AddHandler cCustomButton.MouseLeave, AddressOf customButtonMouseLeave
+        AddHandler cCustomButton.Click, AddressOf customButtonMouseClick
+
+        For Each ctr As Control In panel.Controls
+            AddHandler ctr.MouseEnter, AddressOf customButtonMouseEnter
+            AddHandler ctr.MouseLeave, AddressOf customButtonMouseLeave
+            AddHandler ctr.Click, AddressOf customButtonMouseClick
+        Next
+    End Sub
+
+    Private Sub customButtonMouseEnter(sender As Object, e As EventArgs)
+        cCustomButton.BackgroundImage = My.Resources.box_bg_14
+    End Sub
+
+    Private Sub customButtonMouseLeave(sender As Object, e As EventArgs)
+        cCustomButton.BackgroundImage = My.Resources.box_bg_12
+    End Sub
+
+    Private Sub customButtonMouseClick(sender As Object, e As EventArgs)
+        cCustomFunction()
+    End Sub
+
 #End Region
 End Class

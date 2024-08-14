@@ -60,25 +60,64 @@ Public Class FMain
 
     Private Sub FMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+        'change fore color
+
+        'event handler for custom button panel
+        Dim customButton1, customButton2 As New class_pcmbs
+
+        customButton1.CustomButton(Panel5, AddressOf test1)
+        customButton2.CustomButton(Panel6, AddressOf test2)
+
     End Sub
 
     Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
 
     End Sub
 
-    Private Sub Panel5_MouseEnter(sender As Object, e As EventArgs) Handles Panel5.MouseEnter, Panel6.MouseEnter, LinkLabel6.MouseEnter, LinkLabel4.MouseEnter
-        Panel5.BackgroundImage = My.Resources.box_bg_14
-
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        For Each ctr In pMain.Controls
+            If TypeOf ctr Is Form Then
+                ctr.hide()
+            End If
+        Next
     End Sub
 
-    Private Sub Panel5_MouseLeave(sender As Object, e As EventArgs) Handles Panel5.MouseLeave, Panel6.MouseLeave, LinkLabel6.MouseLeave, LinkLabel4.MouseLeave
-        Panel5.BackgroundImage = My.Resources.box_bg_12
+    '#Region "Main Button 1"
+    '    Private Sub Panel5_MouseEnter(sender As Object, e As EventArgs) Handles Panel5.MouseEnter,
+    '        LinkLabel6.MouseEnter, LinkLabel4.MouseEnter, PictureBox5.MouseEnter, PictureBox6.MouseEnter
 
-    End Sub
+    '        Panel5.BackgroundImage = My.Resources.box_bg_14
 
-    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+    '    End Sub
 
-    End Sub
+    '    Private Sub Panel5_MouseLeave(sender As Object, e As EventArgs) Handles Panel5.MouseLeave, LinkLabel6.MouseLeave,
+    '        LinkLabel4.MouseLeave, LinkLabel5.MouseLeave
+
+    '        LinkLabel6.BackColor = Color.Transparent
+    '        Panel5.BackgroundImage = My.Resources.box_bg_12
+
+    '    End Sub
+
+    '#End Region
+
+    '#Region "Main Button 2"
+    '    Private Sub Panel6_MouseEnter(sender As Object, e As EventArgs) Handles Panel6.MouseEnter,
+    '        LinkLabel6.MouseEnter, LinkLabel4.MouseEnter, PictureBox5.MouseEnter
+
+    '        Panel5.BackgroundImage = My.Resources.box_bg_14
+
+    '    End Sub
+
+    '    Private Sub Panel6_MouseLeave(sender As Object, e As EventArgs) Handles Panel6.MouseLeave, LinkLabel5.MouseLeave,
+    '        LinkLabel7.MouseLeave, LinkLabel5.MouseLeave
+
+    '        LinkLabel6.BackColor = Color.Transparent
+    '        Panel5.BackgroundImage = My.Resources.box_bg_12
+
+    '    End Sub
+
+    '#End Region
 End Class
 
 

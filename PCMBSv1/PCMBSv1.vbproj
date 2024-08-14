@@ -94,6 +94,7 @@
     <Compile Include="lib\class_pcmbs.vb" />
     <Compile Include="lib\class_placeholder.vb" />
     <Compile Include="Modules\SELECT_MODULE.vb" />
+    <Compile Include="Modules\Test_Module.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -292,6 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\box_bg_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

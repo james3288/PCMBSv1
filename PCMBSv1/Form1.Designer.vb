@@ -44,10 +44,17 @@ Partial Class FMain
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.pMain = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel7 = New System.Windows.Forms.LinkLabel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +63,13 @@ Partial Class FMain
         Me.leftPanel.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.pMain.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -297,14 +310,78 @@ Partial Class FMain
         'Panel6
         '
         Me.Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), System.Drawing.Image)
-        Me.Panel6.Location = New System.Drawing.Point(199, 16)
+        Me.Panel6.Controls.Add(Me.PictureBox7)
+        Me.Panel6.Controls.Add(Me.PictureBox8)
+        Me.Panel6.Controls.Add(Me.LinkLabel5)
+        Me.Panel6.Controls.Add(Me.LinkLabel7)
+        Me.Panel6.Controls.Add(Me.PictureBox9)
+        Me.Panel6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel6.Location = New System.Drawing.Point(212, 16)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(147, 188)
-        Me.Panel6.TabIndex = 1
+        Me.Panel6.TabIndex = 10
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(49, 89)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(47, 50)
+        Me.PictureBox7.TabIndex = 9
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Location = New System.Drawing.Point(25, 66)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(100, 99)
+        Me.PictureBox8.TabIndex = 8
+        Me.PictureBox8.TabStop = False
+        '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel5.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel5.Location = New System.Drawing.Point(33, 14)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(104, 21)
+        Me.LinkLabel5.TabIndex = 4
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "LOREM IPSU"
+        '
+        'LinkLabel7
+        '
+        Me.LinkLabel7.AutoSize = True
+        Me.LinkLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel7.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel7.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel7.Location = New System.Drawing.Point(40, 35)
+        Me.LinkLabel7.Name = "LinkLabel7"
+        Me.LinkLabel7.Size = New System.Drawing.Size(78, 15)
+        Me.LinkLabel7.TabIndex = 7
+        Me.LinkLabel7.TabStop = True
+        Me.LinkLabel7.Text = "Lorem Ipsum"
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Image = Global.PCMBSv1.My.Resources.Resources.icons8_supplier_24
+        Me.PictureBox9.Location = New System.Drawing.Point(8, 14)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox9.TabIndex = 5
+        Me.PictureBox9.TabStop = False
         '
         'Panel5
         '
         Me.Panel5.BackgroundImage = CType(resources.GetObject("Panel5.BackgroundImage"), System.Drawing.Image)
+        Me.Panel5.Controls.Add(Me.PictureBox6)
+        Me.Panel5.Controls.Add(Me.PictureBox5)
         Me.Panel5.Controls.Add(Me.LinkLabel4)
         Me.Panel5.Controls.Add(Me.LinkLabel6)
         Me.Panel5.Controls.Add(Me.PictureBox4)
@@ -314,14 +391,46 @@ Partial Class FMain
         Me.Panel5.Size = New System.Drawing.Size(147, 188)
         Me.Panel5.TabIndex = 0
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.PCMBSv1.My.Resources.Resources.registration_icon
+        Me.PictureBox6.Location = New System.Drawing.Point(68, 89)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(65, 51)
+        Me.PictureBox6.TabIndex = 9
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(25, 66)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(100, 99)
+        Me.PictureBox5.TabIndex = 8
+        Me.PictureBox5.TabStop = False
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel4.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel4.Location = New System.Drawing.Point(33, 14)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(104, 21)
+        Me.LinkLabel4.TabIndex = 4
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "LOREM IPSU"
+        '
         'LinkLabel6
         '
         Me.LinkLabel6.AutoSize = True
         Me.LinkLabel6.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel6.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel6.Location = New System.Drawing.Point(38, 97)
+        Me.LinkLabel6.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel6.Location = New System.Drawing.Point(40, 35)
         Me.LinkLabel6.Name = "LinkLabel6"
         Me.LinkLabel6.Size = New System.Drawing.Size(78, 15)
         Me.LinkLabel6.TabIndex = 7
@@ -331,26 +440,12 @@ Partial Class FMain
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(6, 76)
+        Me.PictureBox4.Image = Global.PCMBSv1.My.Resources.Resources.icons8_supplier_24
+        Me.PictureBox4.Location = New System.Drawing.Point(8, 14)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox4.TabIndex = 5
         Me.PictureBox4.TabStop = False
-        '
-        'LinkLabel4
-        '
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(31, 76)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(110, 21)
-        Me.LinkLabel4.TabIndex = 4
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Maintenance"
         '
         'FMain
         '
@@ -378,8 +473,15 @@ Partial Class FMain
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.pMain.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -406,8 +508,15 @@ Partial Class FMain
     Friend WithEvents ToolStripButton5 As ToolStripButton
     Friend WithEvents ToolStripButton6 As ToolStripButton
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel6 As Panel
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents LinkLabel4 As LinkLabel
     Friend WithEvents LinkLabel6 As LinkLabel
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents LinkLabel5 As LinkLabel
+    Friend WithEvents LinkLabel7 As LinkLabel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox8 As PictureBox
 End Class
