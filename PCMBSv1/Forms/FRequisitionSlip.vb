@@ -100,29 +100,18 @@
         DataGridView1.DataSource = userProfiles
 
         ' Set some properties of the DataGridView
-        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        DataGridView1.MultiSelect = False
-        DataGridView1.RowHeadersVisible = False
-        DataGridView1.BackgroundColor = ColorTranslator.FromHtml("#1B2838")
+        pcmbs.customDatagridview(DataGridView1)
 
 
         ' Column settings
-        DataGridView1.Columns(0).HeaderText = "RS ID"
-        DataGridView1.Columns(0).Width = 50
-
-        DataGridView1.Columns(1).HeaderText = "RS No"
-        DataGridView1.Columns(2).HeaderText = "Description"
-
-        DataGridView1.Columns(3).DefaultCellStyle.Format = "yyyy-MM-dd" ' Format date column
-        DataGridView1.Columns(3).HeaderText = "RS Date"
-
-        DataGridView1.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#8d9da0")
-        DataGridView1.DefaultCellStyle.ForeColor = Color.Black
+        pcmbs.subcustomDatagridviewSettings("headerText", DataGridView1, 0, 50, "rs id",,,)
+        pcmbs.subcustomDatagridviewSettings("headerText", DataGridView1, 1, 70, "RS #",,,)
+        pcmbs.subcustomDatagridviewSettings("headerText", DataGridView1, 2, 500, "Description",,,)
+        pcmbs.subcustomDatagridviewSettings("headerText", DataGridView1, 3, 500, "RS Date", "MM-dd-yyyy")
+        pcmbs.subcustomDatagridviewSettings("defaultCellStyle", DataGridView1)
 
         'Alternating row style
-        DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#B6C3C7")
-        DataGridView1.AlternatingRowsDefaultCellStyle.ForeColor = Color.Black
+        pcmbs.subcustomDatagridviewSettings("alternateRowStyle", DataGridView1)
 
 
         Button1.BackColor = ColorTranslator.FromHtml("#1C2837")

@@ -166,4 +166,49 @@
         AddHandler panel.Paint, AddressOf border_panel
     End Sub
 #End Region
+
+#Region "Custom Datagridview"
+    Public Sub customDatagridview(Optional dgv As DataGridView = Nothing, Optional hexColor As String = "#1B2838")
+
+        ' Set some properties of the DataGridView
+        dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgv.MultiSelect = False
+        dgv.RowHeadersVisible = False
+        dgv.BackgroundColor = ColorTranslator.FromHtml(hexColor)
+
+    End Sub
+
+    Public Sub subcustomDatagridviewSettings(Optional changeType As String = "",
+                                             Optional dgv As DataGridView = Nothing,
+                                             Optional columIndex As Integer = 0,
+                                             Optional width As Integer = 0,
+                                             Optional headerText As String = "",
+                                             Optional format As String = "",
+                                             Optional defaultCellStyleBg As String = "#8d9da0",
+                                             Optional defaultCellStyleForeColor As String = "#fff",
+                                             Optional alternateRowDefaultStyleBg As String = "#B6C3C7",
+                                             Optional alternateRowDefaultForeColor As String = "#000")
+
+        Select Case changeType
+            Case "headerText"
+                dgv.Columns(columIndex).HeaderText = headerText
+                dgv.Columns(columIndex).Width = width
+                dgv.Columns(columIndex).DefaultCellStyle.Format = format ' Format date column
+
+            Case "defaultCellStyle"
+
+                dgv.DefaultCellStyle.BackColor = ColorTranslator.FromHtml(defaultCellStyleBg)
+                dgv.DefaultCellStyle.ForeColor = ColorTranslator.FromHtml(defaultCellStyleForeColor)
+
+            Case "alternateRowStyle"
+                dgv.AlternatingRowsDefaultCellStyle.BackColor = ColorTranslator.FromHtml(alternateRowDefaultStyleBg)
+                dgv.AlternatingRowsDefaultCellStyle.ForeColor = ColorTranslator.FromHtml(alternateRowDefaultForeColor)
+        End Select
+
+
+
+    End Sub
+
+#End Region
 End Class

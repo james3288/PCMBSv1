@@ -69,6 +69,13 @@ Public Class FMain
         customButton1.CustomButton(Panel5, AddressOf test1)
         customButton2.CustomButton(Panel6, AddressOf test2)
 
+
+
+        'add controls
+        For Each ctr As ToolStripButton In ToolStrip1.Items
+            cListOfControl.Add(ctr)
+        Next
+
     End Sub
 
     Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
@@ -97,6 +104,23 @@ Public Class FMain
 
         pcmbs._addToPanel(FLogin, pMain)
         pcmbs._initialize_linkLabel(FLogin, FlowLayoutPanel1)
+        pcmbs._addLinkToFlowLayoutPanel(FlowLayoutPanel1)
+    End Sub
+
+    Private Sub LinkLabel8_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel8.LinkClicked
+
+        Dim exist As Boolean = pcmbs.check_form_if_exist_in_flowLayoutPanel(FUserAccess)
+
+        If exist = True Then
+
+            Dim message As String = $"{FUserAccess.Text  } has already open!"
+            pcmbs.messageForm("Administrator Message", "question", message)
+
+            Exit Sub
+        End If
+
+        pcmbs._addToPanel(FUserAccess, pMain)
+        pcmbs._initialize_linkLabel(FUserAccess, FlowLayoutPanel1)
         pcmbs._addLinkToFlowLayoutPanel(FlowLayoutPanel1)
     End Sub
 

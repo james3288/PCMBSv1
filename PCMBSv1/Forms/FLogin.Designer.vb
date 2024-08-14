@@ -62,7 +62,6 @@ Partial Class FLogin
         'PMain
         '
         Me.PMain.BackgroundImage = CType(resources.GetObject("PMain.BackgroundImage"), System.Drawing.Image)
-        Me.PMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PMain.Controls.Add(Me.LinkLabel3)
         Me.PMain.Controls.Add(Me.btnSearch)
         Me.PMain.Controls.Add(Me.txtPassword)
@@ -85,7 +84,7 @@ Partial Class FLogin
         Me.LinkLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.LinkLabel3.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel3.Location = New System.Drawing.Point(215, 400)
+        Me.LinkLabel3.Location = New System.Drawing.Point(217, 402)
         Me.LinkLabel3.Name = "LinkLabel3"
         Me.LinkLabel3.Size = New System.Drawing.Size(169, 21)
         Me.LinkLabel3.TabIndex = 25
@@ -165,7 +164,7 @@ Partial Class FLogin
         Me.PHeader.Dock = System.Windows.Forms.DockStyle.Top
         Me.PHeader.Location = New System.Drawing.Point(0, 0)
         Me.PHeader.Name = "PHeader"
-        Me.PHeader.Size = New System.Drawing.Size(392, 41)
+        Me.PHeader.Size = New System.Drawing.Size(394, 41)
         Me.PHeader.TabIndex = 0
         '
         'PictureBox1
@@ -173,7 +172,7 @@ Partial Class FLogin
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.PCMBSv1.My.Resources.Resources.close_button3
-        Me.PictureBox1.Location = New System.Drawing.Point(363, 9)
+        Me.PictureBox1.Location = New System.Drawing.Point(365, 9)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(21, 23)
         Me.PictureBox1.TabIndex = 4

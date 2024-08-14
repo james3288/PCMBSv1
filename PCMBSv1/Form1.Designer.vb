@@ -24,6 +24,8 @@ Partial Class FMain
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FMain))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel8 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -56,6 +58,7 @@ Partial Class FMain
         Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,6 +79,8 @@ Partial Class FMain
         'Panel1
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.PictureBox10)
+        Me.Panel1.Controls.Add(Me.LinkLabel8)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.LinkLabel3)
         Me.Panel1.Controls.Add(Me.PictureBox2)
@@ -87,6 +92,30 @@ Partial Class FMain
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1475, 37)
         Me.Panel1.TabIndex = 0
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox10.Image = Global.PCMBSv1.My.Resources.Resources.padlock
+        Me.PictureBox10.Location = New System.Drawing.Point(440, 6)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox10.TabIndex = 7
+        Me.PictureBox10.TabStop = False
+        '
+        'LinkLabel8
+        '
+        Me.LinkLabel8.AutoSize = True
+        Me.LinkLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel8.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel8.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel8.Location = New System.Drawing.Point(471, 8)
+        Me.LinkLabel8.Name = "LinkLabel8"
+        Me.LinkLabel8.Size = New System.Drawing.Size(98, 21)
+        Me.LinkLabel8.TabIndex = 6
+        Me.LinkLabel8.TabStop = True
+        Me.LinkLabel8.Text = "User Access"
         '
         'PictureBox3
         '
@@ -464,6 +493,7 @@ Partial Class FMain
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -519,4 +549,6 @@ Partial Class FMain
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents LinkLabel8 As LinkLabel
 End Class

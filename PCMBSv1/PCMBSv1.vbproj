@@ -97,6 +97,12 @@
     <Compile Include="Forms\FRequisitionSlip.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FUserAccess.Designer.vb">
+      <DependentUpon>FUserAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FUserAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="lib\class_pcmbs.vb" />
     <Compile Include="lib\class_placeholder.vb" />
     <Compile Include="Modules\SELECT_MODULE.vb" />
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FRequisitionSlip.resx">
       <DependentUpon>FRequisitionSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FUserAccess.resx">
+      <DependentUpon>FUserAccess.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
