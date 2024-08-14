@@ -67,6 +67,11 @@ PCMBSv1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PCMBSv1.My.Resources.Resources.id_card">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PCMBSv1.My.Resources.Resources.inbox1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -98,6 +103,11 @@ PCMBSv1
 </summary>
 </member>
 <member name="P:PCMBSv1.My.Resources.Resources.open1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCMBSv1.My.Resources.Resources.padlock">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

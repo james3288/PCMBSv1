@@ -3,6 +3,7 @@
     Private cListOfLinkLabel As New List(Of LinkLabel)
     Private cFlowLayoutPanel As FlowLayoutPanel
     Private cCustomButton As Panel
+    Private cPanel As Panel
     Private cCustomFunction As customFunctionDelegate
 
 
@@ -152,5 +153,17 @@
         cCustomFunction()
     End Sub
 
+#End Region
+
+#Region "BORDER ON PANEL"
+
+    Private Sub border_panel(sender As Object, e As PaintEventArgs)
+        ControlPaint.DrawBorder(e.Graphics, cPanel.ClientRectangle, Color.Black, ButtonBorderStyle.Solid)
+    End Sub
+    Public Sub borderOnPanel(Optional panel As Panel = Nothing)
+        cPanel = panel
+
+        AddHandler panel.Paint, AddressOf border_panel
+    End Sub
 #End Region
 End Class

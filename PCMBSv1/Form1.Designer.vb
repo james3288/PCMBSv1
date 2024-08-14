@@ -107,10 +107,10 @@ Partial Class FMain
         Me.LinkLabel3.LinkColor = System.Drawing.Color.White
         Me.LinkLabel3.Location = New System.Drawing.Point(353, 8)
         Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(103, 21)
+        Me.LinkLabel3.Size = New System.Drawing.Size(53, 21)
         Me.LinkLabel3.TabIndex = 4
         Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Registration"
+        Me.LinkLabel3.Text = "Login"
         '
         'PictureBox2
         '

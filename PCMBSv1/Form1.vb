@@ -83,6 +83,23 @@ Public Class FMain
         Next
     End Sub
 
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+
+        Dim exist As Boolean = pcmbs.check_form_if_exist_in_flowLayoutPanel(FLogin)
+
+        If exist = True Then
+
+            Dim message As String = $"{FLogin.Text  } has already open!"
+            pcmbs.messageForm("Administrator Message", "question", message)
+
+            Exit Sub
+        End If
+
+        pcmbs._addToPanel(FLogin, pMain)
+        pcmbs._initialize_linkLabel(FLogin, FlowLayoutPanel1)
+        pcmbs._addLinkToFlowLayoutPanel(FlowLayoutPanel1)
+    End Sub
+
     '#Region "Main Button 1"
     '    Private Sub Panel5_MouseEnter(sender As Object, e As EventArgs) Handles Panel5.MouseEnter,
     '        LinkLabel6.MouseEnter, LinkLabel4.MouseEnter, PictureBox5.MouseEnter, PictureBox6.MouseEnter

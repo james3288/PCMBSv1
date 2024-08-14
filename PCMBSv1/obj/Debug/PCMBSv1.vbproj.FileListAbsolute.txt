@@ -39,3 +39,4 @@ D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FMessageForm.resources
 D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.vbproj.GenerateResource.Cache
 D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRS_Search.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRS_Search.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FLogin.resources

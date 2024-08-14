@@ -23,9 +23,6 @@
 
     End Sub
 
-    Private Sub panel_left_Paint(sender As Object, e As PaintEventArgs) Handles panel_left.Paint
-        ControlPaint.DrawBorder(e.Graphics, panel_left.ClientRectangle, Color.Black, ButtonBorderStyle.Solid)
-    End Sub
 
     Private Sub SearchByRSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SearchByRSToolStripMenuItem.Click
         FRS_Search.ShowDialog()
@@ -129,6 +126,10 @@
 
 
         Button1.BackColor = ColorTranslator.FromHtml("#1C2837")
+
+        'border on panel 
+        Dim panelLeft_border As New class_pcmbs
+        panelLeft_border.borderOnPanel(panel_left)
     End Sub
 
 
