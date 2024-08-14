@@ -93,6 +93,7 @@
     </Compile>
     <Compile Include="lib\class_pcmbs.vb" />
     <Compile Include="lib\class_placeholder.vb" />
+    <Compile Include="Modules\SELECT_MODULE.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -267,6 +268,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_14.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

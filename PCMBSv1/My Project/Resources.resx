@@ -196,4 +196,16 @@
   <data name="statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="box_bg_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_bg_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_bg_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_bg_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_bg_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_bg_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_bg_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_bg_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

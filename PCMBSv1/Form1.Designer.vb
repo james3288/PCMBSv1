@@ -39,8 +39,15 @@ Partial Class FMain
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.pMain = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +55,9 @@ Partial Class FMain
         Me.Panel2.SuspendLayout()
         Me.leftPanel.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
+        Me.pMain.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -173,7 +183,7 @@ Partial Class FMain
         Me.leftPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.leftPanel.Location = New System.Drawing.Point(0, 76)
         Me.leftPanel.Name = "leftPanel"
-        Me.leftPanel.Size = New System.Drawing.Size(260, 475)
+        Me.leftPanel.Size = New System.Drawing.Size(382, 475)
         Me.leftPanel.TabIndex = 3
         '
         'Panel4
@@ -182,7 +192,7 @@ Partial Class FMain
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel4.Location = New System.Drawing.Point(0, 433)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(260, 42)
+        Me.Panel4.Size = New System.Drawing.Size(382, 42)
         Me.Panel4.TabIndex = 1
         '
         'ToolStrip1
@@ -191,12 +201,12 @@ Partial Class FMain
         Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripButton2})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripButton2})
         Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip1.Size = New System.Drawing.Size(260, 475)
+        Me.ToolStrip1.Size = New System.Drawing.Size(382, 475)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -236,6 +246,30 @@ Partial Class FMain
         Me.ToolStripButton4.Text = "Project Code"
         Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripButton5
+        '
+        Me.ToolStripButton5.ForeColor = System.Drawing.Color.White
+        Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
+        Me.ToolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton5.Name = "ToolStripButton5"
+        Me.ToolStripButton5.Padding = New System.Windows.Forms.Padding(5)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(108, 125)
+        Me.ToolStripButton5.Text = "Reports"
+        Me.ToolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripButton6
+        '
+        Me.ToolStripButton6.ForeColor = System.Drawing.Color.White
+        Me.ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), System.Drawing.Image)
+        Me.ToolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton6.Name = "ToolStripButton6"
+        Me.ToolStripButton6.Padding = New System.Windows.Forms.Padding(5)
+        Me.ToolStripButton6.Size = New System.Drawing.Size(139, 125)
+        Me.ToolStripButton6.Text = "PROJECT ENGINEER"
+        Me.ToolStripButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
         'ToolStripButton2
         '
         Me.ToolStripButton2.ForeColor = System.Drawing.Color.White
@@ -244,19 +278,79 @@ Partial Class FMain
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
         Me.ToolStripButton2.Padding = New System.Windows.Forms.Padding(5)
-        Me.ToolStripButton2.Size = New System.Drawing.Size(108, 125)
-        Me.ToolStripButton2.Text = "Reports"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(110, 125)
+        Me.ToolStripButton2.Text = "PROJECT COST"
         Me.ToolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'pMain
         '
         Me.pMain.BackColor = System.Drawing.Color.Transparent
         Me.pMain.BackgroundImage = CType(resources.GetObject("pMain.BackgroundImage"), System.Drawing.Image)
+        Me.pMain.Controls.Add(Me.Panel6)
+        Me.pMain.Controls.Add(Me.Panel5)
         Me.pMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pMain.Location = New System.Drawing.Point(260, 76)
+        Me.pMain.Location = New System.Drawing.Point(382, 76)
         Me.pMain.Name = "pMain"
-        Me.pMain.Size = New System.Drawing.Size(1215, 475)
+        Me.pMain.Size = New System.Drawing.Size(1093, 475)
         Me.pMain.TabIndex = 4
+        '
+        'Panel6
+        '
+        Me.Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), System.Drawing.Image)
+        Me.Panel6.Location = New System.Drawing.Point(199, 16)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(147, 188)
+        Me.Panel6.TabIndex = 1
+        '
+        'Panel5
+        '
+        Me.Panel5.BackgroundImage = CType(resources.GetObject("Panel5.BackgroundImage"), System.Drawing.Image)
+        Me.Panel5.Controls.Add(Me.LinkLabel4)
+        Me.Panel5.Controls.Add(Me.LinkLabel6)
+        Me.Panel5.Controls.Add(Me.PictureBox4)
+        Me.Panel5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel5.Location = New System.Drawing.Point(25, 16)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(147, 188)
+        Me.Panel5.TabIndex = 0
+        '
+        'LinkLabel6
+        '
+        Me.LinkLabel6.AutoSize = True
+        Me.LinkLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel6.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel6.Location = New System.Drawing.Point(38, 97)
+        Me.LinkLabel6.Name = "LinkLabel6"
+        Me.LinkLabel6.Size = New System.Drawing.Size(78, 15)
+        Me.LinkLabel6.TabIndex = 7
+        Me.LinkLabel6.TabStop = True
+        Me.LinkLabel6.Text = "Lorem Ipsum"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(6, 76)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox4.TabIndex = 5
+        Me.PictureBox4.TabStop = False
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel4.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel4.Location = New System.Drawing.Point(31, 76)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(110, 21)
+        Me.LinkLabel4.TabIndex = 4
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Maintenance"
         '
         'FMain
         '
@@ -283,6 +377,10 @@ Partial Class FMain
         Me.leftPanel.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        Me.pMain.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -305,4 +403,11 @@ Partial Class FMain
     Friend WithEvents pMain As Panel
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Panel4 As Panel
+    Friend WithEvents ToolStripButton5 As ToolStripButton
+    Friend WithEvents ToolStripButton6 As ToolStripButton
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents LinkLabel6 As LinkLabel
 End Class
