@@ -89,11 +89,7 @@
         UIipServer.king_placeholder_textbox("Type Server IP...", txtServer, Nothing, Panel2, My.Resources.info, False, "White", "")
         UIdatabaseName.king_placeholder_textbox("Type Database Name...", txtDatabaseName, Nothing, Panel2, My.Resources.info, False, "White", "")
         UIserverUser.king_placeholder_textbox("Type Server UserName...", txtUsername, Nothing, Panel2, My.Resources.info, False, "White", "")
-        UIpassword.king_placeholder_textbox("Type Server Password...", txtUsername, Nothing, Panel2, My.Resources.info, False, "White", "")
-
-
-
-
+        UIpassword.king_placeholder_textbox("Type Server Password...", txtPassword, Nothing, Panel2, My.Resources.info, False, "White", "")
     End Sub
 
     Public Sub save(ByVal n As Integer)
