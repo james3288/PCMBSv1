@@ -5,6 +5,8 @@ Public Class FMain
     Private small_left_panel As Integer = 160
     Private parameter As String
     Public pcmbs As New class_pcmbs
+    Public ifFind As Boolean
+
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
 
@@ -65,17 +67,19 @@ Public Class FMain
 
     Private Sub FMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         datachecking()
+        check_con()
     End Sub
 
     Public Sub datachecking()
         Dim spl As String
         Dim sp As System.Array
 
-        Dim supply, eus, bio As Boolean
+        Dim supply, eus, hr, pcm As Boolean
 
         Dim iniFile As String = Application.StartupPath & "\syscon.ini"
         Dim iniFile1 As String = Application.StartupPath & "\syscon1.ini"
         Dim iniFile2 As String = Application.StartupPath & "\syscon2.ini"
+        Dim iniFile3 As String = Application.StartupPath & "\syscon3.ini"
 
         If FileIO.FileSystem.FileExists(iniFile) = True Then
             supply = True
@@ -91,27 +95,73 @@ Public Class FMain
         End If
 
         If FileIO.FileSystem.FileExists(iniFile2) = True Then
-            bio = True
+            hr = True
         Else
 
-            bio = False
+            hr = False
         End If
 
-        If eus = False Or supply = False Or bio = False Then
-            NetconnForm.ShowDialog()
+        If FileIO.FileSystem.FileExists(iniFile3) = True Then
+            pcm = True
+        Else
 
+            pcm = False
+        End If
+
+        If eus = False Or supply = False Or hr = False Or pcm = False Then
+            NetconnForm.ShowDialog()
             For Each ctr As Control In Me.Controls
                 ctr.Enabled = False
             Next
             Exit Sub
         End If
 
-        If bio = True Then
+        If pcm = True Then
             spl = FileIO.FileSystem.ReadAllText(iniFile)
             sp = Split(spl, ";")
         End If
 
         Dim strHostName As String
         strHostName = System.Net.Dns.GetHostName()
+    End Sub
+
+    Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
+
+    End Sub
+
+
+    Public Sub check_con()
+        Dim newSQ As New SQLcon
+        Try
+            newSQ.connection_supply.Open()
+
+        Catch ex As Exception
+            MsgBox("Connection Failed")
+        Finally
+            If newSQ.connection_supply.State = ConnectionState.Open Then
+                newSQ.connection_supply.Close()
+            End If
+        End Try
+    End Sub
+
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
+        Dim exist As Boolean = pcmbs.check_form_if_exist_in_flowLayoutPanel(FProjectCode)
+
+        If exist = True Then
+            Dim newMessage As New FMessageForm
+
+            With newMessage
+                .title = "Administrator Message"
+                .status = "warning"
+                .myFunction(, AddressOf paramFunction)
+                .message = $"{FProjectCode.Text  } has already open!"
+                .ShowDialog()
+            End With
+            Exit Sub
+        End If
+
+        pcmbs._addToPanel(FProjectCode, pMain)
+        pcmbs._initialize_linkLabel(FProjectCode, FlowLayoutPanel1)
+        pcmbs._addLinkToFlowLayoutPanel(FlowLayoutPanel1)
     End Sub
 End Class

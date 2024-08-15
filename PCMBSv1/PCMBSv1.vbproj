@@ -86,6 +86,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FProjectCode.Designer.vb">
+      <DependentUpon>FProjectCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FProjectCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FQuantityTakeOff.Designer.vb">
       <DependentUpon>FQuantityTakeOff.vb</DependentUpon>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <Compile Include="lib\class_pcmbs.vb" />
     <Compile Include="lib\class_placeholder.vb" />
+    <Compile Include="Module\InsertQueryvb.vb" />
+    <Compile Include="Module\PublicFunctions.vb" />
+    <Compile Include="Module\SelectQuery.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -135,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FProjectCode.resx">
+      <DependentUpon>FProjectCode.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FQuantityTakeOff.resx">
       <DependentUpon>FQuantityTakeOff.vb</DependentUpon>
@@ -286,6 +298,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\server2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,29 +3,36 @@ Imports System.Data.SqlClient
 
 Public Class SQLcon
     Dim fso As New FileIO.FileSystem
-    Dim iniFile, inifile1, inifile2 As String
+    Dim iniFile, inifile1, inifile2, inifile3 As String
 
     Protected SQ As SqlConnection
-    Protected server As String '= "192.168.1.92"
+    Protected server As String '= "192.168.1.5"
     Protected database As String '= "supply_db"
     Protected userid As String '= "sa"
-    Protected pass As String '= "adfil"
+    Protected pass As String '= "Password"
 
     'for eus database (192.168.2.93)
-    Protected server1 As String '= "192.168.1.92"
-    Protected database1 As String '= "supply_db"
+    Protected server1 As String '= "192.168.1.5"
+    Protected database1 As String '= "eus"
     Protected userid1 As String '= "sa"
-    Protected pass1 As String '= "adfil"
+    Protected pass1 As String '= "password"
 
     'for eus database (192.168.2.92)
-    Protected server2 As String '= "192.168.1.92"
-    Protected database2 As String '= "supply_db"
+    Protected server2 As String '= "192.168.1.5"
+    Protected database2 As String '= "hrms"
     Protected userid2 As String '= "sa"
-    Protected pass2 As String '= "adfil"
+    Protected pass2 As String '= "password"
 
-    Public connection As SqlConnection
-    Public connection1 As SqlConnection
-    Public connection2 As SqlConnection
+    Protected server3 As String '= "192.168.1.5"
+    Protected database3 As String '= "pcmb"
+    Protected userid3 As String '= "sa"
+    Protected pass3 As String '= "password"
+
+    Public connection_supply As SqlConnection
+    Public connection_eus As SqlConnection
+    Public connection_hr As SqlConnection
+    Public connection_pcm As SqlConnection
+    'Public connection2 As SqlConnection
     ' Public cn As New SqlConnection
 
 
@@ -43,6 +50,8 @@ Public Class SQLcon
         iniFile = Application.StartupPath & "\syscon.ini" 'supply database 192.168.2.96
         inifile1 = Application.StartupPath & "\syscon1.ini" 'eus database 192.168.2.96
         inifile2 = Application.StartupPath & "\syscon2.ini" 'eus database 192.168.2.96
+        inifile3 = Application.StartupPath & "\syscon3.ini" 'eus database 192.168.2.96
+        'inifile2 = Application.StartupPath & "\syscon2.ini" 'eus database 192.168.2.96
 
         If FileIO.FileSystem.FileExists(iniFile) Then
             spl = FileIO.FileSystem.ReadAllText(iniFile)
@@ -53,7 +62,7 @@ Public Class SQLcon
             userid = sp(2)
             pass = sp(3)
 
-            connection = New SqlConnection("Data Source=" & server & ";Initial Catalog=" & database & ";User ID=" & userid & ";Password=" & pass & "; Trusted_Connection=false;")
+            connection_supply = New SqlConnection("Data Source=" & server & ";Initial Catalog=" & database & ";User ID=" & userid & ";Password=" & pass & "; Trusted_Connection=false;")
 
         End If
 
@@ -66,7 +75,7 @@ Public Class SQLcon
             userid1 = sp1(2)
             pass1 = sp1(3)
 
-            connection1 = New SqlConnection("Data Source=" & server1 & ";Initial Catalog=" & database1 & ";User ID=" & userid1 & ";Password=" & pass1 & "; Trusted_Connection=false;")
+            connection_eus = New SqlConnection("Data Source=" & server1 & ";Initial Catalog=" & database1 & ";User ID=" & userid1 & ";Password=" & pass1 & "; Trusted_Connection=false;")
         Else
         End If
 
@@ -80,7 +89,20 @@ Public Class SQLcon
             userid2 = sp1(2)
             pass2 = sp1(3)
 
-            connection2 = New SqlConnection("Data Source=" & server2 & ";Initial Catalog=" & database2 & ";User ID=" & userid2 & ";Password=" & pass2 & "; Trusted_Connection=false;")
+            connection_hr = New SqlConnection("Data Source=" & server2 & ";Initial Catalog=" & database2 & ";User ID=" & userid2 & ";Password=" & pass2 & "; Trusted_Connection=false;")
+        Else
+        End If
+
+        If FileIO.FileSystem.FileExists(inifile3) Then
+            spl1 = FileIO.FileSystem.ReadAllText(inifile3)
+            sp1 = Split(spl1, ";")
+
+            server3 = sp1(0)
+            database3 = sp1(1)
+            userid3 = sp1(2)
+            pass3 = sp1(3)
+
+            connection_pcm = New SqlConnection("Data Source=" & server3 & ";Initial Catalog=" & database3 & ";User ID=" & userid3 & ";Password=" & pass3 & "; Trusted_Connection=false;")
         Else
         End If
 
@@ -88,12 +110,12 @@ Public Class SQLcon
 
     Public Function hasConnection() As Boolean
         Try
-            connection.Open()
-            connection.Close()
+            connection_supply.Open()
+            connection_supply.Close()
             Return True
         Catch ex As Exception
             MsgBox(ex.Message)
-            connection.Close()
+            connection_supply.Close()
             Return False
         End Try
 

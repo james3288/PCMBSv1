@@ -31,9 +31,9 @@ Partial Class NetconnForm
         Me.txtDatabaseName = New System.Windows.Forms.TextBox()
         Me.txtServer = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.picStatus = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.picStatus, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +69,7 @@ Partial Class NetconnForm
         Me.cmbsource.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbsource.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbsource.FormattingEnabled = True
-        Me.cmbsource.Items.AddRange(New Object() {"EUS", "SUPPLY", "BIOMETRIC"})
+        Me.cmbsource.Items.AddRange(New Object() {"SUPPLY", "EUS", "HRMS", "PCM"})
         Me.cmbsource.Location = New System.Drawing.Point(79, 132)
         Me.cmbsource.Name = "cmbsource"
         Me.cmbsource.Size = New System.Drawing.Size(245, 26)
@@ -119,6 +119,20 @@ Partial Class NetconnForm
         Me.Panel1.Size = New System.Drawing.Size(318, 65)
         Me.Panel1.TabIndex = 467
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel1.Location = New System.Drawing.Point(93, 19)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(129, 21)
+        Me.LinkLabel1.TabIndex = 10
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "ADD DATABASE"
+        '
         'picStatus
         '
         Me.picStatus.BackColor = System.Drawing.Color.Transparent
@@ -146,20 +160,6 @@ Partial Class NetconnForm
         Me.Button1.Text = "              Save"
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(93, 19)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(129, 21)
-        Me.LinkLabel1.TabIndex = 10
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "ADD DATABASE"
         '
         'Panel2
         '

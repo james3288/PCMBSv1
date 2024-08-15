@@ -52,7 +52,7 @@ PCMBSv1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:PCMBSv1.My.Resources.Resources.icons8_supplier_24">
+<member name="P:PCMBSv1.My.Resources.Resources.icons8_supplier_241">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -93,6 +93,16 @@ PCMBSv1
 </summary>
 </member>
 <member name="P:PCMBSv1.My.Resources.Resources.philippine_peso">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCMBSv1.My.Resources.Resources.project">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCMBSv1.My.Resources.Resources.project2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -138,6 +148,11 @@ PCMBSv1
 </summary>
 </member>
 <member name="P:PCMBSv1.My.Resources.Resources.seo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCMBSv1.My.Resources.Resources.server2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

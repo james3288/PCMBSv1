@@ -24,6 +24,14 @@
 
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub panel_left_Paint(sender As Object, e As PaintEventArgs) Handles panel_left.Paint
+
+    End Sub
+
     Private Sub picStatus_Click(sender As Object, e As EventArgs) Handles picStatus.Click
 
     End Sub
