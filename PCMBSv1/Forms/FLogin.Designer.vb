@@ -34,11 +34,13 @@ Partial Class FLogin
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PHeader = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PMain.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PHeader.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -62,7 +64,7 @@ Partial Class FLogin
         'PMain
         '
         Me.PMain.BackgroundImage = CType(resources.GetObject("PMain.BackgroundImage"), System.Drawing.Image)
-        Me.PMain.Controls.Add(Me.LinkLabel3)
+        Me.PMain.Controls.Add(Me.Panel1)
         Me.PMain.Controls.Add(Me.btnSearch)
         Me.PMain.Controls.Add(Me.txtPassword)
         Me.PMain.Controls.Add(Me.txtUserName)
@@ -84,7 +86,7 @@ Partial Class FLogin
         Me.LinkLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.LinkLabel3.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel3.Location = New System.Drawing.Point(217, 402)
+        Me.LinkLabel3.Location = New System.Drawing.Point(218, 6)
         Me.LinkLabel3.Name = "LinkLabel3"
         Me.LinkLabel3.Size = New System.Drawing.Size(169, 21)
         Me.LinkLabel3.TabIndex = 25
@@ -178,6 +180,16 @@ Partial Class FLogin
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.LinkLabel3)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 397)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(394, 34)
+        Me.Panel1.TabIndex = 26
+        '
         'FLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -195,6 +207,8 @@ Partial Class FLogin
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PHeader.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -210,4 +224,5 @@ Partial Class FLogin
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnSearch As Button
     Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents Panel1 As Panel
 End Class

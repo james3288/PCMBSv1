@@ -25,13 +25,13 @@ Partial Class FMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FMain))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel8 = New System.Windows.Forms.LinkLabel()
+        Me.llblUserAccess = New System.Windows.Forms.LinkLabel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.llblLogin = New System.Windows.Forms.LinkLabel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.llblMaintenance = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.llblHome = New System.Windows.Forms.LinkLabel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -80,13 +80,13 @@ Partial Class FMain
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.Controls.Add(Me.PictureBox10)
-        Me.Panel1.Controls.Add(Me.LinkLabel8)
+        Me.Panel1.Controls.Add(Me.llblUserAccess)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.LinkLabel3)
+        Me.Panel1.Controls.Add(Me.llblLogin)
         Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.LinkLabel2)
+        Me.Panel1.Controls.Add(Me.llblMaintenance)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.LinkLabel1)
+        Me.Panel1.Controls.Add(Me.llblHome)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -103,19 +103,19 @@ Partial Class FMain
         Me.PictureBox10.TabIndex = 7
         Me.PictureBox10.TabStop = False
         '
-        'LinkLabel8
+        'llblUserAccess
         '
-        Me.LinkLabel8.AutoSize = True
-        Me.LinkLabel8.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel8.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel8.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel8.Location = New System.Drawing.Point(471, 8)
-        Me.LinkLabel8.Name = "LinkLabel8"
-        Me.LinkLabel8.Size = New System.Drawing.Size(98, 21)
-        Me.LinkLabel8.TabIndex = 6
-        Me.LinkLabel8.TabStop = True
-        Me.LinkLabel8.Text = "User Access"
+        Me.llblUserAccess.AutoSize = True
+        Me.llblUserAccess.BackColor = System.Drawing.Color.Transparent
+        Me.llblUserAccess.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llblUserAccess.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llblUserAccess.LinkColor = System.Drawing.Color.White
+        Me.llblUserAccess.Location = New System.Drawing.Point(471, 8)
+        Me.llblUserAccess.Name = "llblUserAccess"
+        Me.llblUserAccess.Size = New System.Drawing.Size(98, 21)
+        Me.llblUserAccess.TabIndex = 6
+        Me.llblUserAccess.TabStop = True
+        Me.llblUserAccess.Text = "User Access"
         '
         'PictureBox3
         '
@@ -127,19 +127,19 @@ Partial Class FMain
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
         '
-        'LinkLabel3
+        'llblLogin
         '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel3.Location = New System.Drawing.Point(353, 8)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(53, 21)
-        Me.LinkLabel3.TabIndex = 4
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Login"
+        Me.llblLogin.AutoSize = True
+        Me.llblLogin.BackColor = System.Drawing.Color.Transparent
+        Me.llblLogin.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llblLogin.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llblLogin.LinkColor = System.Drawing.Color.White
+        Me.llblLogin.Location = New System.Drawing.Point(353, 8)
+        Me.llblLogin.Name = "llblLogin"
+        Me.llblLogin.Size = New System.Drawing.Size(53, 21)
+        Me.llblLogin.TabIndex = 4
+        Me.llblLogin.TabStop = True
+        Me.llblLogin.Text = "Login"
         '
         'PictureBox2
         '
@@ -151,19 +151,19 @@ Partial Class FMain
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
         '
-        'LinkLabel2
+        'llblMaintenance
         '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(183, 8)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(110, 21)
-        Me.LinkLabel2.TabIndex = 2
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Maintenance"
+        Me.llblMaintenance.AutoSize = True
+        Me.llblMaintenance.BackColor = System.Drawing.Color.Transparent
+        Me.llblMaintenance.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llblMaintenance.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llblMaintenance.LinkColor = System.Drawing.Color.White
+        Me.llblMaintenance.Location = New System.Drawing.Point(183, 8)
+        Me.llblMaintenance.Name = "llblMaintenance"
+        Me.llblMaintenance.Size = New System.Drawing.Size(110, 21)
+        Me.llblMaintenance.TabIndex = 2
+        Me.llblMaintenance.TabStop = True
+        Me.llblMaintenance.Text = "Maintenance"
         '
         'PictureBox1
         '
@@ -175,19 +175,19 @@ Partial Class FMain
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'LinkLabel1
+        'llblHome
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(60, 8)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(56, 21)
-        Me.LinkLabel1.TabIndex = 0
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Home"
+        Me.llblHome.AutoSize = True
+        Me.llblHome.BackColor = System.Drawing.Color.Transparent
+        Me.llblHome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llblHome.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llblHome.LinkColor = System.Drawing.Color.White
+        Me.llblHome.Location = New System.Drawing.Point(60, 8)
+        Me.llblHome.Name = "llblHome"
+        Me.llblHome.Size = New System.Drawing.Size(56, 21)
+        Me.llblHome.TabIndex = 0
+        Me.llblHome.TabStop = True
+        Me.llblHome.Text = "Home"
         '
         'Panel2
         '
@@ -522,11 +522,11 @@ Partial Class FMain
     Friend WithEvents Panel3 As Panel
     Friend WithEvents leftPanel As Panel
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents llblLogin As LinkLabel
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents llblMaintenance As LinkLabel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents llblHome As LinkLabel
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripButton2 As ToolStripButton
@@ -550,5 +550,5 @@ Partial Class FMain
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents LinkLabel8 As LinkLabel
+    Friend WithEvents llblUserAccess As LinkLabel
 End Class

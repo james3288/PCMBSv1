@@ -71,8 +71,8 @@
 
         ElseIf status = "error" Then
             picStatus.Image = My.Resources._error
-            lblMessage.ForeColor = Color.Red
-            lblTitle.ForeColor = Color.Red
+            lblMessage.ForeColor = ColorTranslator.FromHtml("#A7504D")
+            lblTitle.ForeColor = ColorTranslator.FromHtml("#A7504D")
             btnOk.BackColor = ColorTranslator.FromHtml("#641217")
             btnOk.Text = "OK"
             btnCancel.Text = "Cancel"
@@ -95,12 +95,14 @@
             btnOk.ForeColor = Color.Black
             btnOk.Text = "Yes"
             btnCancel.Text = "No"
+
         End If
 
         lblMessage.Text = message
         lblTitle.Text = title
 
         lblStatus.Text = status.ToUpper()
+
     End Sub
 
     Private Sub FMessageForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown

@@ -41,3 +41,4 @@ D:\kj\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRS_Search.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FRS_Search.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FLogin.resources
 G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FUserAccess.resources
+G:\BACKUP\Adfil\PCMBS\v3\PCMBSv1\PCMBSv1\obj\Debug\PCMBSv1.FUserAcess_Search.resources

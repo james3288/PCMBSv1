@@ -168,10 +168,20 @@
 #End Region
 
 #Region "Custom Datagridview"
+
+    Public Sub customDataGridviewCheckBox(Optional dgv As DataGridView = Nothing)
+
+        Dim checkboxColumn As New DataGridViewCheckBoxColumn()
+        checkboxColumn.HeaderText = "Select"
+        checkboxColumn.Name = "CheckBoxColumn"
+        dgv.Columns.Add(checkboxColumn)
+
+    End Sub
     Public Sub customDatagridview(Optional dgv As DataGridView = Nothing, Optional hexColor As String = "#1B2838")
 
         ' Set some properties of the DataGridView
         dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgv.RowTemplate.Height = 28
         dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         dgv.MultiSelect = False
         dgv.RowHeadersVisible = False
@@ -194,6 +204,7 @@
             Case "headerText"
                 dgv.Columns(columIndex).HeaderText = headerText
                 dgv.Columns(columIndex).Width = width
+
                 dgv.Columns(columIndex).DefaultCellStyle.Format = format ' Format date column
 
             Case "defaultCellStyle"

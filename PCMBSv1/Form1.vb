@@ -76,13 +76,18 @@ Public Class FMain
             cListOfControl.Add(ctr)
         Next
 
+        cListOfControl.Add(llblHome)
+        cListOfControl.Add(llblLogin)
+        cListOfControl.Add(llblMaintenance)
+        cListOfControl.Add(llblUserAccess)
+
     End Sub
 
     Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
 
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblHome.LinkClicked
         For Each ctr In pMain.Controls
             If TypeOf ctr Is Form Then
                 ctr.hide()
@@ -90,7 +95,7 @@ Public Class FMain
         Next
     End Sub
 
-    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblLogin.LinkClicked
 
         Dim exist As Boolean = pcmbs.check_form_if_exist_in_flowLayoutPanel(FLogin)
 
@@ -107,7 +112,7 @@ Public Class FMain
         pcmbs._addLinkToFlowLayoutPanel(FlowLayoutPanel1)
     End Sub
 
-    Private Sub LinkLabel8_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel8.LinkClicked
+    Private Sub LinkLabel8_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblUserAccess.LinkClicked
 
         Dim exist As Boolean = pcmbs.check_form_if_exist_in_flowLayoutPanel(FUserAccess)
 
